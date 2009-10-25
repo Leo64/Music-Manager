@@ -36,15 +36,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbSql.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Frm-About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Frm-About.Designer.cs">
+      <DependentUpon>Frm-About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbSql.cs" />
+    <Compile Include="frm-ConectarBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm-ConectarBD.Designer.cs">
+      <DependentUpon>frm-ConectarBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm-ConsultasSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm-ConsultasSQL.Designer.cs">
+      <DependentUpon>frm-ConsultasSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm-Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm-Principal.Designer.cs">
+      <DependentUpon>Frm-Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm-About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm-About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm-ConectarBD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm-ConectarBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm-ConsultasSQL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm-ConsultasSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm-Principal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm-Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -53,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -63,6 +98,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help and Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web Database.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

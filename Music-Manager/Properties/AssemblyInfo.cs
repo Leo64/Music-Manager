@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Music-Manager")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Nicolas")]
+[assembly: AssemblyCompany("Compania - A establecer")]
 [assembly: AssemblyProduct("Music-Manager")]
-[assembly: AssemblyCopyright("© Nicolas 2009")]
+[assembly: AssemblyCopyright("© A establecer")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

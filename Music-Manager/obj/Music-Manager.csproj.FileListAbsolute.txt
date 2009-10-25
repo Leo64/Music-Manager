@@ -1,0 +1,24 @@
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\bin\Debug\Music-Manager.exe
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\bin\Debug\Music-Manager.pdb
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music_Manager.frmAbout.resources
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music_Manager.Form1.resources
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music_Manager.Properties.Resources.resources
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music-Manager.exe
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music-Manager.pdb
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music_Manager.frm_ConsultasSQL.resources
+C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBD.resources
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music-Manager.exe
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music-Manager.pdb
+D:\Nicolas\Music-manager\Music-Manager\bin\Debug\Music-Manager.exe
+D:\Nicolas\Music-manager\Music-Manager\bin\Debug\Music-Manager.pdb
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music_Manager.frmAbout.resources
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBD.resources
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music_Manager.frm_ConsultasSQL.resources
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music_Manager.Form1.resources
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music_Manager.Properties.Resources.resources
+D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
+D:\Nicolas\Programacion\_Music-Manager\Music-Manager\obj\Debug\Music-Manager.exe
+D:\Nicolas\Programacion\_Music-Manager\Music-Manager\obj\Debug\Music-Manager.pdb
