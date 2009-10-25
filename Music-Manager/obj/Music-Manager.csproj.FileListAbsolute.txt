@@ -36,7 +36,6 @@ D:\Nicolas\Programacion\Music-Manager\Music-Manager\bin\Release\Music-Manager.ex
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\bin\Release\Music-Manager.pdb
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\ResolveAssemblyReference.cache
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.frm_About.resources
-D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.frm_ConectarBd.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.frm_ConsultasSQL.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.frm_Principal.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.Properties.Resources.resources
@@ -44,3 +43,4 @@ D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.cs
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.exe
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.pdb
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBaseDeDatos.resources
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.frm_ConectarBaseDeDatos.resources

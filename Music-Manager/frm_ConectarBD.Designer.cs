@@ -105,6 +105,7 @@
             // 
             // cbx_Bd
             // 
+            this.cbx_Bd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_Bd.FormattingEnabled = true;
             this.cbx_Bd.Location = new System.Drawing.Point(87, 64);
             this.cbx_Bd.Name = "cbx_Bd";
