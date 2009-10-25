@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace Music_Manager
 {
-    public partial class Form1 : Form
+    public partial class frm_Principal : Form
     {
         bool error;
-        public Form1 ()
+        public frm_Principal ()
         {
             InitializeComponent();
             error = false;
@@ -26,7 +26,7 @@ namespace Music_Manager
             // Botones menu
         private void tsbAcercaDe_Click(object sender, EventArgs e)
         {  
-            frmAbout frmAbout = new frmAbout();
+            frm_About frmAbout = new frm_About();
             frmAbout.Show();
         }   /* Informacion Sobre Nosotros */
 
@@ -39,7 +39,7 @@ namespace Music_Manager
             // Boton Menu Conectar con BD
         private void tsddbABD_Conectar_Click(object sender, EventArgs e)
         {
-            frm_ConectarBD frm_ConectarBD = new frm_ConectarBD();
+            frm_ConectarBd frm_ConectarBD = new frm_ConectarBd();
             frm_ConectarBD.Show();
         }   /* Se establesera la conexion con la base de datos a utilizar */
 
@@ -120,8 +120,8 @@ namespace Music_Manager
         private void tsslConexion_Click(object sender, EventArgs e)
         {
             /* Cuando la conexion se establece se debe cambiar el icono*/
-
-            tsslConexion.Image = Image.FromFile(@"C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\Resources\Web Database.png");
+            tsslConexion.Image = global::Music_Manager.Properties.Resources.WebDatabase;
+            //tsslConexion.Image = Image.FromFile(@"C:\Users\Leonardo\Documents\Tecnicatura\Intergrador Lab-Prog\Music-manager\Music-Manager\Resources\Web Database.png");
         }
 
         // Arbol
@@ -137,17 +137,10 @@ namespace Music_Manager
            
         }
 
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
         //Nuevos elememtos Generados
-
-
     }
 }

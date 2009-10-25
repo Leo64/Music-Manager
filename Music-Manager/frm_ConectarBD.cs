@@ -8,19 +8,14 @@ using System.Windows.Forms;
 
 namespace Music_Manager
 {
-    public partial class frm_ConectarBD : Form
+    public partial class frm_ConectarBd : Form
     {
-        public frm_ConectarBD()
+        public frm_ConectarBd()
         {
             InitializeComponent();
         }
         
         //Botones
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();

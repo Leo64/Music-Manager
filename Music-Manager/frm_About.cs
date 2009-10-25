@@ -7,9 +7,9 @@ using System.Reflection;
 
 namespace Music_Manager
 {
-    partial class frmAbout : Form
+    partial class frm_About : Form
     {
-        public frmAbout()
+        public frm_About()
         {
             InitializeComponent();
 
@@ -122,9 +122,9 @@ namespace Music_Manager
         {
             //textBoxDescription.Lines = 
             textBoxDescription.Text = "Integrantes del grupo:" +
-                Environment.NewLine + "Back Leonardo" +
-                Environment.NewLine + "Fassi Claudio" +
-                Environment.NewLine + "Mastroviti Nicolas";
+                Environment.NewLine + " • Back, Leonardo" +
+                Environment.NewLine + " • Fassi, Claudio" +
+                Environment.NewLine + " • Mastroviti, Nicolas";
         }
     }
 }

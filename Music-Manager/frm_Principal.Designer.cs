@@ -1,6 +1,6 @@
 ﻿namespace Music_Manager
 {
-    partial class Form1
+    partial class frm_Principal
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -29,7 +29,7 @@
         {
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Artista");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Album");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Principal));
             this.TabControl = new System.Windows.Forms.TabControl();
             this.tabInfo = new System.Windows.Forms.TabPage();
             this.grpBuscar = new System.Windows.Forms.GroupBox();
@@ -40,7 +40,6 @@
             this.cmbBuscarPor = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSiguiente = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -52,13 +51,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabTemas = new System.Windows.Forms.TabPage();
-            this.btnAnterior1 = new System.Windows.Forms.Button();
-            this.btnSuiguiente1 = new System.Windows.Forms.Button();
             this.lblInformacion = new System.Windows.Forms.Label();
             this.lstTemas = new System.Windows.Forms.ListBox();
             this.tabAgregar = new System.Windows.Forms.TabPage();
-            this.btnAnterior2 = new System.Windows.Forms.Button();
-            this.btnSiguiente2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,14 +67,14 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.tabEstadistica = new System.Windows.Forms.TabPage();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.MenuStrip = new System.Windows.Forms.ToolStrip();
             this.tsddbArchivo = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsddbArchivo_Cerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsddbAdminBD = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsddbABD_Conectar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbConsultas = new System.Windows.Forms.ToolStripButton();
             this.tsbAcercaDe = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.tsslConexion = new System.Windows.Forms.ToolStripStatusLabel();
             this.TabControl.SuspendLayout();
             this.tabInfo.SuspendLayout();
@@ -88,8 +83,8 @@
             this.tabTemas.SuspendLayout();
             this.tabAgregar.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
+            this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControl
@@ -98,7 +93,7 @@
             this.TabControl.Controls.Add(this.tabTemas);
             this.TabControl.Controls.Add(this.tabAgregar);
             this.TabControl.Controls.Add(this.tabEstadistica);
-            this.TabControl.Location = new System.Drawing.Point(205, 54);
+            this.TabControl.Location = new System.Drawing.Point(205, 28);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
             this.TabControl.Size = new System.Drawing.Size(618, 546);
@@ -191,7 +186,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnSiguiente);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblDescripcion);
@@ -207,17 +201,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(593, 292);
             this.panel1.TabIndex = 1;
-            // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnSiguiente.Location = new System.Drawing.Point(510, 269);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
-            this.btnSiguiente.TabIndex = 10;
-            this.btnSiguiente.Text = "Siguiente";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
-            this.btnSiguiente.Click += new System.EventHandler(this.btnSuiguiente_Click);
             // 
             // listBox1
             // 
@@ -319,8 +302,6 @@
             // 
             // tabTemas
             // 
-            this.tabTemas.Controls.Add(this.btnAnterior1);
-            this.tabTemas.Controls.Add(this.btnSuiguiente1);
             this.tabTemas.Controls.Add(this.lblInformacion);
             this.tabTemas.Controls.Add(this.lstTemas);
             this.tabTemas.Location = new System.Drawing.Point(4, 22);
@@ -330,26 +311,6 @@
             this.tabTemas.TabIndex = 1;
             this.tabTemas.Text = "Temas";
             this.tabTemas.UseVisualStyleBackColor = true;
-            // 
-            // btnAnterior1
-            // 
-            this.btnAnterior1.Location = new System.Drawing.Point(446, 491);
-            this.btnAnterior1.Name = "btnAnterior1";
-            this.btnAnterior1.Size = new System.Drawing.Size(75, 23);
-            this.btnAnterior1.TabIndex = 3;
-            this.btnAnterior1.Text = "Anterior";
-            this.btnAnterior1.UseVisualStyleBackColor = true;
-            this.btnAnterior1.Click += new System.EventHandler(this.btnAnterior1_Click);
-            // 
-            // btnSuiguiente1
-            // 
-            this.btnSuiguiente1.Location = new System.Drawing.Point(527, 491);
-            this.btnSuiguiente1.Name = "btnSuiguiente1";
-            this.btnSuiguiente1.Size = new System.Drawing.Size(75, 23);
-            this.btnSuiguiente1.TabIndex = 2;
-            this.btnSuiguiente1.Text = "Siguiente";
-            this.btnSuiguiente1.UseVisualStyleBackColor = true;
-            this.btnSuiguiente1.Click += new System.EventHandler(this.btnSuiguiente1_Click);
             // 
             // lblInformacion
             // 
@@ -372,8 +333,6 @@
             // 
             // tabAgregar
             // 
-            this.tabAgregar.Controls.Add(this.btnAnterior2);
-            this.tabAgregar.Controls.Add(this.btnSiguiente2);
             this.tabAgregar.Controls.Add(this.panel2);
             this.tabAgregar.Location = new System.Drawing.Point(4, 22);
             this.tabAgregar.Name = "tabAgregar";
@@ -382,26 +341,6 @@
             this.tabAgregar.TabIndex = 2;
             this.tabAgregar.Text = "Agregar, Modificar";
             this.tabAgregar.UseVisualStyleBackColor = true;
-            // 
-            // btnAnterior2
-            // 
-            this.btnAnterior2.Location = new System.Drawing.Point(446, 491);
-            this.btnAnterior2.Name = "btnAnterior2";
-            this.btnAnterior2.Size = new System.Drawing.Size(75, 23);
-            this.btnAnterior2.TabIndex = 15;
-            this.btnAnterior2.Text = "Anterior";
-            this.btnAnterior2.UseVisualStyleBackColor = true;
-            this.btnAnterior2.Click += new System.EventHandler(this.btnAnterior2_Click);
-            // 
-            // btnSiguiente2
-            // 
-            this.btnSiguiente2.Location = new System.Drawing.Point(527, 491);
-            this.btnSiguiente2.Name = "btnSiguiente2";
-            this.btnSiguiente2.Size = new System.Drawing.Size(75, 23);
-            this.btnSiguiente2.TabIndex = 14;
-            this.btnSiguiente2.Text = "Suiguiente";
-            this.btnSiguiente2.UseVisualStyleBackColor = true;
-            this.btnSiguiente2.Click += new System.EventHandler(this.btnSiguiente2_Click);
             // 
             // panel2
             // 
@@ -527,7 +466,7 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(0, 54);
+            this.treeView1.Location = new System.Drawing.Point(0, 28);
             this.treeView1.Name = "treeView1";
             treeNode1.ForeColor = System.Drawing.Color.Blue;
             treeNode1.Name = "NodeArtista";
@@ -542,19 +481,18 @@
             this.treeView1.TabIndex = 1;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
-            // toolStrip1
+            // MenuStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsddbArchivo,
             this.tsddbAdminBD,
             this.tsbConsultas,
             this.tsbAcercaDe});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(823, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Size = new System.Drawing.Size(825, 25);
+            this.MenuStrip.TabIndex = 0;
+            this.MenuStrip.Text = "ts";
             // 
             // tsddbArchivo
             // 
@@ -569,15 +507,15 @@
             // tsddbArchivo_Cerrar
             // 
             this.tsddbArchivo_Cerrar.Name = "tsddbArchivo_Cerrar";
-            this.tsddbArchivo_Cerrar.Size = new System.Drawing.Size(116, 22);
-            this.tsddbArchivo_Cerrar.Text = "Cerrar";
+            this.tsddbArchivo_Cerrar.Size = new System.Drawing.Size(105, 22);
+            this.tsddbArchivo_Cerrar.Text = "Salir";
             this.tsddbArchivo_Cerrar.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
             // tsddbAdminBD
             // 
             this.tsddbAdminBD.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsddbABD_Conectar});
-            this.tsddbAdminBD.Image = global::Music_Manager.Properties.Resources.Database_3;
+            this.tsddbAdminBD.Image = global::Music_Manager.Properties.Resources.Database;
             this.tsddbAdminBD.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsddbAdminBD.Name = "tsddbAdminBD";
             this.tsddbAdminBD.Size = new System.Drawing.Size(148, 22);
@@ -585,7 +523,7 @@
             // 
             // tsddbABD_Conectar
             // 
-            this.tsddbABD_Conectar.Image = global::Music_Manager.Properties.Resources.New_Database;
+            this.tsddbABD_Conectar.Image = global::Music_Manager.Properties.Resources.NewDatabase;
             this.tsddbABD_Conectar.Name = "tsddbABD_Conectar";
             this.tsddbABD_Conectar.Size = new System.Drawing.Size(221, 22);
             this.tsddbABD_Conectar.Text = "Conectar con Base de Datos";
@@ -602,43 +540,46 @@
             // 
             // tsbAcercaDe
             // 
-            this.tsbAcercaDe.Image = global::Music_Manager.Properties.Resources.Help_and_Support;
+            this.tsbAcercaDe.Image = global::Music_Manager.Properties.Resources.HelpAndSupport;
             this.tsbAcercaDe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAcercaDe.Name = "tsbAcercaDe";
             this.tsbAcercaDe.Size = new System.Drawing.Size(75, 22);
             this.tsbAcercaDe.Text = "Acerca de";
             this.tsbAcercaDe.Click += new System.EventHandler(this.tsbAcercaDe_Click);
             // 
-            // statusStrip1
+            // StatusStrip
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslConexion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(823, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
+            this.StatusStrip.Location = new System.Drawing.Point(0, 577);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.Size = new System.Drawing.Size(825, 22);
+            this.StatusStrip.TabIndex = 3;
+            this.StatusStrip.Text = "statusStrip1";
             // 
             // tsslConexion
             // 
-            this.tsslConexion.Image = global::Music_Manager.Properties.Resources.Delete_Database;
+            this.tsslConexion.Image = global::Music_Manager.Properties.Resources.DeleteDatabase;
             this.tsslConexion.Name = "tsslConexion";
             this.tsslConexion.Size = new System.Drawing.Size(91, 17);
             this.tsslConexion.Text = "Desconectado";
             this.tsslConexion.Click += new System.EventHandler(this.tsslConexion_Click);
             // 
-            // Form1
+            // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 625);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.toolStrip1);
+            this.ClientSize = new System.Drawing.Size(825, 599);
+            this.Controls.Add(this.StatusStrip);
+            this.Controls.Add(this.MenuStrip);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.TabControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Music-Manager";
+            this.MaximizeBox = false;
+            this.Name = "frm_Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Music Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.TabControl.ResumeLayout(false);
             this.tabInfo.ResumeLayout(false);
@@ -651,10 +592,10 @@
             this.tabAgregar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
+            this.StatusStrip.ResumeLayout(false);
+            this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -666,8 +607,8 @@
         private System.Windows.Forms.TabPage tabInfo;
         private System.Windows.Forms.TabPage tabTemas;
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStrip MenuStrip;
+        private System.Windows.Forms.StatusStrip StatusStrip;
         private System.Windows.Forms.TabPage tabAgregar;
         private System.Windows.Forms.TabPage tabEstadistica;
         private System.Windows.Forms.ToolStripButton tsbAcercaDe;
@@ -705,13 +646,8 @@
         private System.Windows.Forms.GroupBox grpBuscar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label lblComentario;
-        private System.Windows.Forms.Button btnSiguiente;
-        private System.Windows.Forms.Button btnAnterior1;
-        private System.Windows.Forms.Button btnSuiguiente1;
         private System.Windows.Forms.Label lblInformacion;
         private System.Windows.Forms.ListBox lstTemas;
-        private System.Windows.Forms.Button btnAnterior2;
-        private System.Windows.Forms.Button btnSiguiente2;
         private System.Windows.Forms.ToolStripStatusLabel tsslConexion;
     }
 }

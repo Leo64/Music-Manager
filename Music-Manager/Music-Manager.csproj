@@ -36,13 +36,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autor.cs" />
     <Compile Include="frm_About.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_About.Designer.cs">
       <DependentUpon>frm_About.cs</DependentUpon>
     </Compile>
-    <Compile Include="DbSql.cs" />
+    <Compile Include="BdSql.cs" />
     <Compile Include="frm_ConectarBD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +62,7 @@
     <Compile Include="frm_Principal.Designer.cs">
       <DependentUpon>frm_Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_About.resx">
@@ -100,28 +102,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\New Database.png" />
+    <None Include="Resources\NewDatabase.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Help and Support.png" />
+    <None Include="Resources\HelpAndSupport.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Edit.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Database 3.png" />
+    <None Include="Resources\Database.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Clipboard.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Globe Connected.png" />
+    <None Include="Resources\DeleteDatabase.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Delete Database.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Web Database.png" />
+    <None Include="Resources\WebDatabase.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
