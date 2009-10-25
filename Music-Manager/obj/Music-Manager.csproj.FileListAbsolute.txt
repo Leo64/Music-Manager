@@ -27,7 +27,6 @@ D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music-Manager.pdb
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\bin\Debug\Music-Manager.exe
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\bin\Debug\Music-Manager.pdb
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\ResolveAssemblyReference.cache
-D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBD.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConsultasSQL.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.Properties.Resources.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
@@ -44,3 +43,4 @@ D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.Pr
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.csproj.GenerateResource.Cache
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.exe
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.pdb
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBaseDeDatos.resources

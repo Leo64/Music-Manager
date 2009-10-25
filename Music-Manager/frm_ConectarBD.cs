@@ -5,18 +5,31 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Music_Manager
 {
-    public partial class frm_ConectarBd : Form
+    public partial class frm_ConectarBaseDeDatos : Form
     {
-        public frm_ConectarBd()
+        const int MF_BYPOSITION = 0x400;
+
+        [DllImport("User32")]
+        private static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("User32")]
+        private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("User32")]
+        private static extern int GetMenuItemCount(IntPtr hWnd);
+
+        public frm_ConectarBaseDeDatos()
         {
             InitializeComponent();
+
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int menuItemCount = GetMenuItemCount(hMenu);
+            RemoveMenu(hMenu, menuItemCount - 1, MF_BYPOSITION);
         }
         
-        //Botones
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
