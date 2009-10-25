@@ -36,48 +36,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm-About.cs">
+    <Compile Include="frm_About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm-About.Designer.cs">
-      <DependentUpon>Frm-About.cs</DependentUpon>
+    <Compile Include="frm_About.Designer.cs">
+      <DependentUpon>frm_About.cs</DependentUpon>
     </Compile>
     <Compile Include="DbSql.cs" />
-    <Compile Include="frm-ConectarBD.cs">
+    <Compile Include="frm_ConectarBD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm-ConectarBD.Designer.cs">
-      <DependentUpon>frm-ConectarBD.cs</DependentUpon>
+    <Compile Include="frm_ConectarBD.Designer.cs">
+      <DependentUpon>frm_ConectarBD.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm-ConsultasSQL.cs">
+    <Compile Include="frm_ConsultasSQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm-ConsultasSQL.Designer.cs">
-      <DependentUpon>frm-ConsultasSQL.cs</DependentUpon>
+    <Compile Include="frm_ConsultasSQL.Designer.cs">
+      <DependentUpon>frm_ConsultasSQL.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm-Principal.cs">
+    <Compile Include="frm_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm-Principal.Designer.cs">
-      <DependentUpon>Frm-Principal.cs</DependentUpon>
+    <Compile Include="frm_Principal.Designer.cs">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm-About.resx">
+    <EmbeddedResource Include="frm_About.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>Frm-About.cs</DependentUpon>
+      <DependentUpon>frm_About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm-ConectarBD.resx">
+    <EmbeddedResource Include="frm_ConectarBD.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>frm-ConectarBD.cs</DependentUpon>
+      <DependentUpon>frm_ConectarBD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm-ConsultasSQL.resx">
+    <EmbeddedResource Include="frm_ConsultasSQL.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>frm-ConsultasSQL.cs</DependentUpon>
+      <DependentUpon>frm_ConsultasSQL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm-Principal.resx">
+    <EmbeddedResource Include="frm_Principal.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>Frm-Principal.cs</DependentUpon>
+      <DependentUpon>frm_Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

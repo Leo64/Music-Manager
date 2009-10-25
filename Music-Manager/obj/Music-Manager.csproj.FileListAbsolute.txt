@@ -22,3 +22,14 @@ D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music_Manager.Properties.Resour
 D:\Nicolas\Music-manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
 D:\Nicolas\Programacion\_Music-Manager\Music-Manager\obj\Debug\Music-Manager.exe
 D:\Nicolas\Programacion\_Music-Manager\Music-Manager\obj\Debug\Music-Manager.pdb
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music-Manager.exe
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music-Manager.pdb
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\bin\Debug\Music-Manager.exe
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\bin\Debug\Music-Manager.pdb
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frmAbout.resources
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBD.resources
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConsultasSQL.resources
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.Form1.resources
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.Properties.Resources.resources
+D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
