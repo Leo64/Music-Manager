@@ -19,3 +19,21 @@ FROM temas AS T
 	INNER JOIN autores AS A
 		ON T.id_autor = A.id_autor
 GROUP BY A.nombre
+
+-- Ver que album's fueron sacados este año
+
+SELECT G.descripcion[Grupo], 
+	A.titulo[Titulo],
+	MONTH(A.fecha_lanzamiento)[Fecha]
+FROM album AS A
+	INNER JOIN grupo AS G
+		ON A.id_grupo = G.id_grupo
+WHERE A.id_album IN (
+	SELECT Al.id_album
+	FROM album AS Al
+	WHERE Al.id_album = A.id_album 
+		AND YEAR(Al.fecha_lanzamiento) = YEAR(getdate())
+	)
+	
+-- Costo total de todos los album's por grupo
+
