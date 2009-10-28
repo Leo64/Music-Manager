@@ -5,16 +5,31 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Music_Manager
 {
     public partial class frm_Principal : Form
     {
+        const int MF_BYPOSITION = 0x400;
+
+        [DllImport("User32")]
+        private static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("User32")]
+        private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("User32")]
+        private static extern int GetMenuItemCount(IntPtr hWnd);
+
         bool error;
+
         public frm_Principal ()
         {
             InitializeComponent();
             error = false;
+
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int menuItemCount = GetMenuItemCount(hMenu);
+            RemoveMenu(hMenu, menuItemCount - 1, MF_BYPOSITION);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,7 +54,7 @@ namespace Music_Manager
             // Boton Menu Conectar con BD
         private void tsddbABD_Conectar_Click(object sender, EventArgs e)
         {
-            frm_ConectarBd frm_ConectarBD = new frm_ConectarBd();
+            frm_ConectarBaseDeDatos frm_ConectarBD = new frm_ConectarBaseDeDatos();
             frm_ConectarBD.Show();
         }   /* Se establesera la conexion con la base de datos a utilizar */
 
@@ -49,13 +64,6 @@ namespace Music_Manager
             this.Close();
         }   /* Cierra el Formulario Principal */
 
-        // Botones
-            // Pestaña Informacion
-        private void btnSuiguiente_Click(object sender, EventArgs e)
-        {
-            TabControl.SelectTab(1);
-        }   /* Salta a la pestaña siguiente (Temas) */
-
         private void cmbBuscarPor_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -63,7 +71,7 @@ namespace Music_Manager
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (txtValue.Text == "" || cmbBuscarPor.SelectedIndex == -1)
+            if (txtValue.Text == null || cmbBuscarPor.SelectedIndex == -1)
             {
                 lblComentario.ForeColor = Color.Red;
                 lblComentario.Text = "Faltan datos nesesarios para la busqueda";
@@ -83,17 +91,6 @@ namespace Music_Manager
 
         }   /* Muestra un resultado en la busqueda */
 
-            // Pestaña Temas
-        private void btnAnterior1_Click(object sender, EventArgs e)
-        {
-            TabControl.SelectTab(0);
-        }   /* Hacia la pestaña Anterior (info)*/
-
-        private void btnSuiguiente1_Click(object sender, EventArgs e)
-        {
-            TabControl.SelectTab(2);
-        }   /* Hacia la pestaña siguiente (Agregar Modificar)*/
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -103,18 +100,6 @@ namespace Music_Manager
         {
 
         }   /* Aqui se encontraran todos los temas del lo seleccionado en la lista anterior */
-
-            // Pestaña Agregar, Modificar
-        private void btnSiguiente2_Click(object sender, EventArgs e)
-        {
-            TabControl.SelectTab(1);
-        }   /* Hacia la pestaña Anterior (temas)*/
-
-
-        private void btnAnterior2_Click(object sender, EventArgs e)
-        {
-            TabControl.SelectTab(3);
-        }   /* Hacia la pestaña siguiente (Estadistica)*/
 
         // Barra estado
         private void tsslConexion_Click(object sender, EventArgs e)

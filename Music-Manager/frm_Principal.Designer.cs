@@ -345,9 +345,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.listBox2);
+            this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.textBox6);
             this.panel2.Controls.Add(this.lbl);

@@ -4,14 +4,28 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace Music_Manager
 {
     partial class frm_About : Form
     {
+        const int MF_BYPOSITION = 0x400;
+
+        [DllImport("User32")]
+        private static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("User32")]
+        private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("User32")]
+        private static extern int GetMenuItemCount(IntPtr hWnd);
+
         public frm_About()
         {
             InitializeComponent();
+
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int menuItemCount = GetMenuItemCount(hMenu);
+            RemoveMenu(hMenu, menuItemCount - 1, MF_BYPOSITION);
 
             //  Inicializar AboutBox para mostrar la información del producto desde la información del ensamblado.
             //  Cambiar la configuración de la información del ensamblado correspondiente a su aplicación desde:
