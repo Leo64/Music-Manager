@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 hola claudio
 
 utn
 
 vamos todavia git
+=======
+<<<<<<< HEAD
+probando commit en codigo en class autor
+borrar el comentario en dicha class
+=======
+hola claudio
+>>>>>>> 5f01a96d2e65ae2d3c34e61e2455878ec5e6c7c5
+::>
+Dedicate a esto Nico. 
+>>>>>>> 4125dc9ef89fed484b9df67003ab691804bf7291
