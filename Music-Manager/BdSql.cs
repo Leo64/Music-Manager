@@ -6,7 +6,7 @@ using System.Data.Sql;
 
 namespace Music_Manager
 {
-    class DbSql
+    class BdSql
     {
     }
 }

@@ -7,3 +7,17 @@ Autors:
 # Back, Leonardo
 # Fassi, Claudio
 # Mastroviti, Nicolas
+
+(fijense si les parece estas, sino propongan otras)
+Convenciones: despues del prefijo va _ (guion bajo) ej. lbl_
+Label : lbl
+LinkLabel : llbl
+TextBox : tbx
+ComboBox : cbx
+ListBox : lbx
+Button : btn
+RadioButton : rbtn
+RichTextBox : rtbx
+GroupBox : gbx
+TabControl : tctrl
+DataGridView : dgv
