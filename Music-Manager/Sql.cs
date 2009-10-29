@@ -51,8 +51,7 @@ namespace Music_Manager
             Consulta = null;
         }
 
-        /* 
-         * NAME: Conectar 
+        /* NAME: Conectar 
          * DESCRIPTION: conexion a una base de datos
          * PARAMETERS: int, string, servidor, usuario, contrasenia
          * RETURNS: true:conexion exitosa false:conexion fallida
@@ -113,40 +112,6 @@ namespace Music_Manager
             }
 
             return true;
-        }
-
-        public void Select()
-        {
-            conexion.ConnectionString = stringConexion;
-            conexion.Open();
-
-            consulta = "SELECT * FROM Personas ORDER BY Apellido";
-
-            command.CommandText = consulta;
-            command.Connection = conexion;
-            
-            dataReader = command.ExecuteReader();
-        }
-
-        public void Insert(string nombre, string apellido, int tipoDocumento, int nroDocumento, int estadoCivil, int sexo, string fallecio)
-        {
-            conexion.ConnectionString = stringConexion;
-            conexion.Open();
-
-            consulta = "INSERT INTO Personas " 
-                + "VALUES('" + nombre + "', '" 
-                + apellido + "', " 
-                + tipoDocumento + ", "
-                + nroDocumento + ", "
-                + estadoCivil + ", " 
-                + sexo + ", " 
-                + fallecio + ")";
-
-            command.CommandText = consulta;
-            command.Connection = conexion;
-            command.ExecuteNonQuery();
-
-            conexion.Close();
         }
     }
 }
