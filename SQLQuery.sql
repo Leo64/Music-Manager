@@ -58,7 +58,8 @@ ORDER BY 1, 3
 
 SELECT G.descripcion[Grupo], 
 	A.titulo[Album],
-	CASE ISNULL(DATEDIFF(year, A.fecha_lanzamiento, getdate()), 0) WHEN 0 THEN 'Falta Fecha Lanzamiento' END[Antiguedad]
+	CASE ISNULL(DATEDIFF(year, A.fecha_lanzamiento, getdate()), 0) 
+		WHEN 0 THEN 'Falta Fecha Lanzamiento' END[Antiguedad]
 FROM album AS A
 	INNER JOIN grupo AS G
 		ON A.id_grupo = G.id_grupo
