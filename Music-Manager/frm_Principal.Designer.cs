@@ -27,38 +27,21 @@
         /// </summary>
         private void InitializeComponent ()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Artista");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Album");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Conjuntos");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Solistas");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Principal));
-            this.TabControl = new System.Windows.Forms.TabControl();
+            this.tc_Agregar = new System.Windows.Forms.TabControl();
             this.tabInfo = new System.Windows.Forms.TabPage();
-            this.grpBuscar = new System.Windows.Forms.GroupBox();
-            this.lblComentario = new System.Windows.Forms.Label();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.txtValue = new System.Windows.Forms.TextBox();
-            this.lblPor = new System.Windows.Forms.Label();
-            this.cmbBuscarPor = new System.Windows.Forms.ComboBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblGrupo = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblArtista = new System.Windows.Forms.Label();
-            this.lblGenero = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbl_Grupo_Nombre = new System.Windows.Forms.Label();
             this.tabTemas = new System.Windows.Forms.TabPage();
             this.lblInformacion = new System.Windows.Forms.Label();
             this.lstTemas = new System.Windows.Forms.ListBox();
             this.tabAgregar = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.lbl = new System.Windows.Forms.Label();
@@ -66,43 +49,45 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.tabEstadistica = new System.Windows.Forms.TabPage();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.MenuStrip = new System.Windows.Forms.ToolStrip();
-            this.tsddbArchivo = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsddbArchivo_Cerrar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsddbAdminBD = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsddbABD_Conectar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbConsultas = new System.Windows.Forms.ToolStripButton();
-            this.tsbAcercaDe = new System.Windows.Forms.ToolStripButton();
+            tv_Grupo = new System.Windows.Forms.TreeView();
+            this.ToolStrip = new System.Windows.Forms.ToolStrip();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
-            this.tsslConexion = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TabControl.SuspendLayout();
+            tsslConexion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsddb_Archivo = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsmi_Archivo_Cerrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsddb_AdministradorDatos = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsmi_AdministradorDatos_Conectar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsl_Buscar = new System.Windows.Forms.ToolStripLabel();
+            this.tsl_Consultas = new System.Windows.Forms.ToolStripButton();
+            this.tsl_AcercaDe = new System.Windows.Forms.ToolStripButton();
+            this.gbx_Grupo = new System.Windows.Forms.GroupBox();
+            this.tbx_Grupo_Nombre = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tc_Agregar.SuspendLayout();
             this.tabInfo.SuspendLayout();
-            this.grpBuscar.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tabTemas.SuspendLayout();
             this.tabAgregar.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.MenuStrip.SuspendLayout();
+            this.ToolStrip.SuspendLayout();
             this.StatusStrip.SuspendLayout();
+            this.gbx_Grupo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TabControl
+            // tc_Agregar
             // 
-            this.TabControl.Controls.Add(this.tabInfo);
-            this.TabControl.Controls.Add(this.tabTemas);
-            this.TabControl.Controls.Add(this.tabAgregar);
-            this.TabControl.Controls.Add(this.tabEstadistica);
-            this.TabControl.Location = new System.Drawing.Point(205, 28);
-            this.TabControl.Name = "TabControl";
-            this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(618, 546);
-            this.TabControl.TabIndex = 2;
+            this.tc_Agregar.Controls.Add(this.tabInfo);
+            this.tc_Agregar.Controls.Add(this.tabTemas);
+            this.tc_Agregar.Controls.Add(this.tabAgregar);
+            this.tc_Agregar.Controls.Add(this.tabEstadistica);
+            this.tc_Agregar.Location = new System.Drawing.Point(205, 24);
+            this.tc_Agregar.Name = "tc_Agregar";
+            this.tc_Agregar.SelectedIndex = 0;
+            this.tc_Agregar.Size = new System.Drawing.Size(618, 546);
+            this.tc_Agregar.TabIndex = 2;
             // 
             // tabInfo
             // 
-            this.tabInfo.Controls.Add(this.grpBuscar);
-            this.tabInfo.Controls.Add(this.panel1);
+            this.tabInfo.Controls.Add(this.gbx_Grupo);
             this.tabInfo.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabInfo.Location = new System.Drawing.Point(4, 22);
             this.tabInfo.Name = "tabInfo";
@@ -112,193 +97,14 @@
             this.tabInfo.Text = "Informacion";
             this.tabInfo.UseVisualStyleBackColor = true;
             // 
-            // grpBuscar
+            // lbl_Grupo_Nombre
             // 
-            this.grpBuscar.Controls.Add(this.lblComentario);
-            this.grpBuscar.Controls.Add(this.btnNuevo);
-            this.grpBuscar.Controls.Add(this.txtValue);
-            this.grpBuscar.Controls.Add(this.lblPor);
-            this.grpBuscar.Controls.Add(this.cmbBuscarPor);
-            this.grpBuscar.Controls.Add(this.btnBuscar);
-            this.grpBuscar.Location = new System.Drawing.Point(17, 6);
-            this.grpBuscar.Name = "grpBuscar";
-            this.grpBuscar.Size = new System.Drawing.Size(572, 210);
-            this.grpBuscar.TabIndex = 0;
-            this.grpBuscar.TabStop = false;
-            this.grpBuscar.Text = "Buscar";
-            // 
-            // lblComentario
-            // 
-            this.lblComentario.AutoSize = true;
-            this.lblComentario.Location = new System.Drawing.Point(9, 90);
-            this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(208, 13);
-            this.lblComentario.TabIndex = 3;
-            this.lblComentario.Text = "Ingrese los datos para realizar la busqueda";
-            this.lblComentario.Click += new System.EventHandler(this.lblComentario_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(93, 172);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 5;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // txtValue
-            // 
-            this.txtValue.Location = new System.Drawing.Point(41, 38);
-            this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(165, 20);
-            this.txtValue.TabIndex = 0;
-            // 
-            // lblPor
-            // 
-            this.lblPor.AutoSize = true;
-            this.lblPor.Location = new System.Drawing.Point(212, 41);
-            this.lblPor.Name = "lblPor";
-            this.lblPor.Size = new System.Drawing.Size(26, 13);
-            this.lblPor.TabIndex = 2;
-            this.lblPor.Text = "Por:";
-            this.lblPor.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // cmbBuscarPor
-            // 
-            this.cmbBuscarPor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBuscarPor.FormattingEnabled = true;
-            this.cmbBuscarPor.Location = new System.Drawing.Point(244, 38);
-            this.cmbBuscarPor.Name = "cmbBuscarPor";
-            this.cmbBuscarPor.Size = new System.Drawing.Size(198, 21);
-            this.cmbBuscarPor.TabIndex = 1;
-            this.cmbBuscarPor.SelectedIndexChanged += new System.EventHandler(this.cmbBuscarPor_SelectedIndexChanged);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(12, 172);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.lblDescripcion);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.lblGrupo);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.lblArtista);
-            this.panel1.Controls.Add(this.lblGenero);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.No;
-            this.panel1.Location = new System.Drawing.Point(17, 222);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 292);
-            this.panel1.TabIndex = 1;
-            // 
-            // listBox1
-            // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(24, 168);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(524, 80);
-            this.listBox1.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 102);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "label4";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(21, 145);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(66, 13);
-            this.lblDescripcion.TabIndex = 8;
-            this.lblDescripcion.Text = "Descripcion:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox1.Location = new System.Drawing.Point(87, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(254, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // lblGrupo
-            // 
-            this.lblGrupo.AutoSize = true;
-            this.lblGrupo.Location = new System.Drawing.Point(42, 66);
-            this.lblGrupo.Name = "lblGrupo";
-            this.lblGrupo.Size = new System.Drawing.Size(39, 13);
-            this.lblGrupo.TabIndex = 1;
-            this.lblGrupo.Text = "Grupo:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox4.Location = new System.Drawing.Point(87, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 5;
-            // 
-            // lblArtista
-            // 
-            this.lblArtista.AutoSize = true;
-            this.lblArtista.Location = new System.Drawing.Point(42, 28);
-            this.lblArtista.Name = "lblArtista";
-            this.lblArtista.Size = new System.Drawing.Size(39, 13);
-            this.lblArtista.TabIndex = 0;
-            this.lblArtista.Text = "Artista:";
-            // 
-            // lblGenero
-            // 
-            this.lblGenero.AutoSize = true;
-            this.lblGenero.Location = new System.Drawing.Point(397, 28);
-            this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(45, 13);
-            this.lblGenero.TabIndex = 6;
-            this.lblGenero.Text = "Genero:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox3.Location = new System.Drawing.Point(448, 26);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox2.Location = new System.Drawing.Point(87, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(254, 20);
-            this.textBox2.TabIndex = 4;
+            this.lbl_Grupo_Nombre.AutoSize = true;
+            this.lbl_Grupo_Nombre.Location = new System.Drawing.Point(54, 22);
+            this.lbl_Grupo_Nombre.Name = "lbl_Grupo_Nombre";
+            this.lbl_Grupo_Nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_Grupo_Nombre.TabIndex = 0;
+            this.lbl_Grupo_Nombre.Text = "Nombre";
             // 
             // tabTemas
             // 
@@ -369,6 +175,16 @@
             this.listBox2.Size = new System.Drawing.Size(524, 106);
             this.listBox2.TabIndex = 11;
             // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox5.Location = new System.Drawing.Point(87, 26);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(254, 20);
+            this.textBox5.TabIndex = 7;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -386,16 +202,6 @@
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Descripcion:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox5.Location = new System.Drawing.Point(87, 26);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(254, 20);
-            this.textBox5.TabIndex = 7;
             // 
             // label6
             // 
@@ -464,93 +270,38 @@
             this.tabEstadistica.Text = "Estadisticas";
             this.tabEstadistica.UseVisualStyleBackColor = true;
             // 
-            // treeView1
+            // tv_Grupo
             // 
-            this.treeView1.Location = new System.Drawing.Point(0, 28);
-            this.treeView1.Name = "treeView1";
-            treeNode1.ForeColor = System.Drawing.Color.Blue;
-            treeNode1.Name = "NodeArtista";
-            treeNode1.Text = "Artista";
-            treeNode2.ForeColor = System.Drawing.Color.Blue;
-            treeNode2.Name = "NodeAlbum";
-            treeNode2.Text = "Album";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            tv_Grupo.Location = new System.Drawing.Point(0, 28);
+            tv_Grupo.Name = "tv_Grupo";
+            treeNode1.Name = "Conjuntos";
+            treeNode1.Text = "Conjuntos";
+            treeNode2.Name = "Solistas";
+            treeNode2.Text = "Solistas";
+            tv_Grupo.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2});
-            this.treeView1.Size = new System.Drawing.Size(199, 542);
-            this.treeView1.TabIndex = 1;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            tv_Grupo.Size = new System.Drawing.Size(199, 542);
+            tv_Grupo.TabIndex = 1;
             // 
-            // MenuStrip
+            // ToolStrip
             // 
-            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsddbArchivo,
-            this.tsddbAdminBD,
-            this.tsbConsultas,
-            this.tsbAcercaDe});
-            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(825, 25);
-            this.MenuStrip.TabIndex = 0;
-            this.MenuStrip.Text = "ts";
-            // 
-            // tsddbArchivo
-            // 
-            this.tsddbArchivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsddbArchivo_Cerrar});
-            this.tsddbArchivo.Image = global::Music_Manager.Properties.Resources.Clipboard;
-            this.tsddbArchivo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsddbArchivo.Name = "tsddbArchivo";
-            this.tsddbArchivo.Size = new System.Drawing.Size(72, 22);
-            this.tsddbArchivo.Text = "Archivo";
-            // 
-            // tsddbArchivo_Cerrar
-            // 
-            this.tsddbArchivo_Cerrar.Name = "tsddbArchivo_Cerrar";
-            this.tsddbArchivo_Cerrar.Size = new System.Drawing.Size(105, 22);
-            this.tsddbArchivo_Cerrar.Text = "Salir";
-            this.tsddbArchivo_Cerrar.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
-            // 
-            // tsddbAdminBD
-            // 
-            this.tsddbAdminBD.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsddbABD_Conectar});
-            this.tsddbAdminBD.Image = global::Music_Manager.Properties.Resources.Database;
-            this.tsddbAdminBD.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsddbAdminBD.Name = "tsddbAdminBD";
-            this.tsddbAdminBD.Size = new System.Drawing.Size(148, 22);
-            this.tsddbAdminBD.Text = "Administrador de Datos";
-            // 
-            // tsddbABD_Conectar
-            // 
-            this.tsddbABD_Conectar.Image = global::Music_Manager.Properties.Resources.NewDatabase;
-            this.tsddbABD_Conectar.Name = "tsddbABD_Conectar";
-            this.tsddbABD_Conectar.Size = new System.Drawing.Size(221, 22);
-            this.tsddbABD_Conectar.Text = "Conectar con Base de Datos";
-            this.tsddbABD_Conectar.Click += new System.EventHandler(this.tsddbABD_Conectar_Click);
-            // 
-            // tsbConsultas
-            // 
-            this.tsbConsultas.Image = global::Music_Manager.Properties.Resources.Edit;
-            this.tsbConsultas.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbConsultas.Name = "tsbConsultas";
-            this.tsbConsultas.Size = new System.Drawing.Size(74, 22);
-            this.tsbConsultas.Text = "Consultas";
-            this.tsbConsultas.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // tsbAcercaDe
-            // 
-            this.tsbAcercaDe.Image = global::Music_Manager.Properties.Resources.HelpAndSupport;
-            this.tsbAcercaDe.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbAcercaDe.Name = "tsbAcercaDe";
-            this.tsbAcercaDe.Size = new System.Drawing.Size(75, 22);
-            this.tsbAcercaDe.Text = "Acerca de";
-            this.tsbAcercaDe.Click += new System.EventHandler(this.tsbAcercaDe_Click);
+            this.ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsddb_Archivo,
+            this.tsddb_AdministradorDatos,
+            this.tsl_Consultas,
+            this.tsl_Buscar,
+            this.tsl_AcercaDe});
+            this.ToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.ToolStrip.Name = "ToolStrip";
+            this.ToolStrip.Size = new System.Drawing.Size(825, 25);
+            this.ToolStrip.TabIndex = 0;
+            this.ToolStrip.Text = "ts";
             // 
             // StatusStrip
             // 
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsslConexion});
+            tsslConexion});
             this.StatusStrip.Location = new System.Drawing.Point(0, 577);
             this.StatusStrip.Name = "StatusStrip";
             this.StatusStrip.Size = new System.Drawing.Size(825, 22);
@@ -559,11 +310,97 @@
             // 
             // tsslConexion
             // 
-            this.tsslConexion.Image = global::Music_Manager.Properties.Resources.DeleteDatabase;
-            this.tsslConexion.Name = "tsslConexion";
-            this.tsslConexion.Size = new System.Drawing.Size(91, 17);
-            this.tsslConexion.Text = "Desconectado";
-            this.tsslConexion.Click += new System.EventHandler(this.tsslConexion_Click);
+            tsslConexion.Image = global::Music_Manager.Properties.Resources.DeleteDatabase;
+            tsslConexion.Name = "tsslConexion";
+            tsslConexion.Size = new System.Drawing.Size(91, 16);
+            tsslConexion.Text = "Desconectado";
+            // 
+            // tsddb_Archivo
+            // 
+            this.tsddb_Archivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_Archivo_Cerrar});
+            this.tsddb_Archivo.Image = global::Music_Manager.Properties.Resources.Clipboard;
+            this.tsddb_Archivo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsddb_Archivo.Name = "tsddb_Archivo";
+            this.tsddb_Archivo.Size = new System.Drawing.Size(72, 22);
+            this.tsddb_Archivo.Text = "Archivo";
+            // 
+            // tsmi_Archivo_Cerrar
+            // 
+            this.tsmi_Archivo_Cerrar.Image = global::Music_Manager.Properties.Resources.Exit;
+            this.tsmi_Archivo_Cerrar.Name = "tsmi_Archivo_Cerrar";
+            this.tsmi_Archivo_Cerrar.Size = new System.Drawing.Size(152, 22);
+            this.tsmi_Archivo_Cerrar.Text = "Salir";
+            this.tsmi_Archivo_Cerrar.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
+            // 
+            // tsddb_AdministradorDatos
+            // 
+            this.tsddb_AdministradorDatos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_AdministradorDatos_Conectar});
+            this.tsddb_AdministradorDatos.Image = global::Music_Manager.Properties.Resources.Database;
+            this.tsddb_AdministradorDatos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsddb_AdministradorDatos.Name = "tsddb_AdministradorDatos";
+            this.tsddb_AdministradorDatos.Size = new System.Drawing.Size(148, 22);
+            this.tsddb_AdministradorDatos.Text = "Administrador de Datos";
+            // 
+            // tsmi_AdministradorDatos_Conectar
+            // 
+            this.tsmi_AdministradorDatos_Conectar.Image = global::Music_Manager.Properties.Resources.NewDatabase;
+            this.tsmi_AdministradorDatos_Conectar.Name = "tsmi_AdministradorDatos_Conectar";
+            this.tsmi_AdministradorDatos_Conectar.Size = new System.Drawing.Size(221, 22);
+            this.tsmi_AdministradorDatos_Conectar.Text = "Conectar con Base de Datos";
+            this.tsmi_AdministradorDatos_Conectar.Click += new System.EventHandler(this.tsddbABD_Conectar_Click);
+            // 
+            // tsl_Buscar
+            // 
+            this.tsl_Buscar.Image = global::Music_Manager.Properties.Resources.Search;
+            this.tsl_Buscar.Name = "tsl_Buscar";
+            this.tsl_Buscar.Size = new System.Drawing.Size(55, 22);
+            this.tsl_Buscar.Text = "Buscar";
+            // 
+            // tsl_Consultas
+            // 
+            this.tsl_Consultas.Image = global::Music_Manager.Properties.Resources.Edit;
+            this.tsl_Consultas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsl_Consultas.Name = "tsl_Consultas";
+            this.tsl_Consultas.Size = new System.Drawing.Size(74, 22);
+            this.tsl_Consultas.Text = "Consultas";
+            this.tsl_Consultas.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // tsl_AcercaDe
+            // 
+            this.tsl_AcercaDe.Image = global::Music_Manager.Properties.Resources.HelpAndSupport;
+            this.tsl_AcercaDe.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsl_AcercaDe.Name = "tsl_AcercaDe";
+            this.tsl_AcercaDe.Size = new System.Drawing.Size(75, 22);
+            this.tsl_AcercaDe.Text = "Acerca de";
+            this.tsl_AcercaDe.Click += new System.EventHandler(this.tsbAcercaDe_Click);
+            // 
+            // gbx_Grupo
+            // 
+            this.gbx_Grupo.Controls.Add(this.textBox1);
+            this.gbx_Grupo.Controls.Add(this.tbx_Grupo_Nombre);
+            this.gbx_Grupo.Controls.Add(this.lbl_Grupo_Nombre);
+            this.gbx_Grupo.Location = new System.Drawing.Point(6, 6);
+            this.gbx_Grupo.Name = "gbx_Grupo";
+            this.gbx_Grupo.Size = new System.Drawing.Size(598, 83);
+            this.gbx_Grupo.TabIndex = 10;
+            this.gbx_Grupo.TabStop = false;
+            this.gbx_Grupo.Text = "Conjunto / Solista";
+            // 
+            // tbx_Grupo_Nombre
+            // 
+            this.tbx_Grupo_Nombre.Location = new System.Drawing.Point(104, 19);
+            this.tbx_Grupo_Nombre.Name = "tbx_Grupo_Nombre";
+            this.tbx_Grupo_Nombre.Size = new System.Drawing.Size(211, 20);
+            this.tbx_Grupo_Nombre.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(104, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(211, 20);
+            this.textBox1.TabIndex = 10;
             // 
             // frm_Principal
             // 
@@ -571,31 +408,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 599);
             this.Controls.Add(this.StatusStrip);
-            this.Controls.Add(this.MenuStrip);
-            this.Controls.Add(this.treeView1);
-            this.Controls.Add(this.TabControl);
+            this.Controls.Add(this.ToolStrip);
+            this.Controls.Add(tv_Grupo);
+            this.Controls.Add(this.tc_Agregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Music Manager";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.TabControl.ResumeLayout(false);
+            this.tc_Agregar.ResumeLayout(false);
             this.tabInfo.ResumeLayout(false);
-            this.grpBuscar.ResumeLayout(false);
-            this.grpBuscar.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tabTemas.ResumeLayout(false);
             this.tabTemas.PerformLayout();
             this.tabAgregar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.MenuStrip.ResumeLayout(false);
-            this.MenuStrip.PerformLayout();
+            this.ToolStrip.ResumeLayout(false);
+            this.ToolStrip.PerformLayout();
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
+            this.gbx_Grupo.ResumeLayout(false);
+            this.gbx_Grupo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,32 +437,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl TabControl;
+        private System.Windows.Forms.TabControl tc_Agregar;
         private System.Windows.Forms.TabPage tabInfo;
         private System.Windows.Forms.TabPage tabTemas;
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.ToolStrip MenuStrip;
+        public static System.Windows.Forms.TreeView tv_Grupo;
+        private System.Windows.Forms.ToolStrip ToolStrip;
         private System.Windows.Forms.StatusStrip StatusStrip;
         private System.Windows.Forms.TabPage tabAgregar;
         private System.Windows.Forms.TabPage tabEstadistica;
-        private System.Windows.Forms.ToolStripButton tsbAcercaDe;
-        private System.Windows.Forms.ToolStripDropDownButton tsddbAdminBD;
-        private System.Windows.Forms.ToolStripMenuItem tsddbABD_Conectar;
-        private System.Windows.Forms.Label lblArtista;
-        private System.Windows.Forms.ToolStripButton tsbConsultas;
-        private System.Windows.Forms.ToolStripDropDownButton tsddbArchivo;
-        private System.Windows.Forms.ToolStripMenuItem tsddbArchivo_Cerrar;
-        private System.Windows.Forms.Label lblGrupo;
-        private System.Windows.Forms.Label lblPor;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblGenero;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ToolStripButton tsl_AcercaDe;
+        private System.Windows.Forms.ToolStripDropDownButton tsddb_AdministradorDatos;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_AdministradorDatos_Conectar;
+        private System.Windows.Forms.Label lbl_Grupo_Nombre;
+        private System.Windows.Forms.ToolStripButton tsl_Consultas;
+        private System.Windows.Forms.ToolStripDropDownButton tsddb_Archivo;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Archivo_Cerrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label1;
@@ -640,15 +463,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox txtValue;
-        private System.Windows.Forms.ComboBox cmbBuscarPor;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.GroupBox grpBuscar;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Label lblComentario;
         private System.Windows.Forms.Label lblInformacion;
         private System.Windows.Forms.ListBox lstTemas;
-        private System.Windows.Forms.ToolStripStatusLabel tsslConexion;
+        public static System.Windows.Forms.ToolStripStatusLabel tsslConexion;
+        private System.Windows.Forms.ToolStripLabel tsl_Buscar;
+        private System.Windows.Forms.GroupBox gbx_Grupo;
+        private System.Windows.Forms.TextBox tbx_Grupo_Nombre;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

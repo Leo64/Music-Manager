@@ -79,3 +79,12 @@ from	album as A
 having max(A.fecha_lanzamiento)	
 --4 
 
+-- CREACION DE STORE PROCEDURE
+
+CREATE PROCEDURE sp_SeleccionNombreConjunto_Solista
+	@tipo bit
+AS
+	SELECT G.descripcion
+	FROM grupo AS G
+	WHERE G.solista_conjunto = @tipo
+

@@ -44,3 +44,14 @@ D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.ex
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music-Manager.pdb
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBaseDeDatos.resources
 D:\Nicolas\Programacion\Music-Manager\Music-Manager\obj\Release\Music_Manager.frm_ConectarBaseDeDatos.resources
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music-Manager.exe
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music-Manager.pdb
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\ResolveAssemblyReference.cache
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_About.resources
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConectarBaseDeDatos.resources
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_ConsultasSQL.resources
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_Principal.resources
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music_Manager.Properties.Resources.resources
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\bin\Debug\Music-Manager.exe
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\bin\Debug\Music-Manager.pdb

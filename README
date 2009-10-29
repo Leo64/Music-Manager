@@ -1,15 +1,16 @@
 Tecnicatura Superior en Programacion - UTN - FRC
+Practico Integrador Programación II - Lab. de Computación II
 
-Project Name:
-# Music-Manager
+- Project Name: 
+Music-Manager
 
-Autors:
+- Autors:
 # Back, Leonardo
 # Fassi, Claudio
 # Mastroviti, Nicolas
 
-(fijense si les parece estas, sino propongan otras)
-Convenciones: despues del prefijo va _ (guion bajo) ej. lbl_
+- Convenciones: despues del prefijo va _ (guion bajo) ej. frm_
+Form : frm
 Label : lbl
 LinkLabel : llbl
 TextBox : tbx
@@ -21,3 +22,8 @@ RichTextBox : rtbx
 GroupBox : gbx
 TabControl : tctrl
 DataGridView : dgv
+ToolStripLabel : tsl
+ToolStripDropDownBox : tsddb
+ToolStripMenuItem : tsmi
+TabControl : tc
+TreeView : tv
