@@ -3,7 +3,7 @@ USE cd
 -- Ver las Disquerias y Companias
 
 SELECT C.descripcion[Nombre], 
-	'Compañia'[Tipo]
+	'Compania'[Tipo]
 FROM companias AS C
 UNION
 SELECT D.descripcion, 
@@ -22,7 +22,7 @@ FROM album AS Al
 		ON T.id_autor = A.id_autor
 GROUP BY A.nombre, Al.titulo
 
--- Ver album's sacados por año
+-- Ver album's sacados por anio
 
 SELECT G.descripcion[Grupo], 
 	A.titulo[Titulo],
@@ -78,6 +78,15 @@ from	album as A
 --where
 having max(A.fecha_lanzamiento)	
 --4 
+
+
+
+
+
+
+
+
+
 
 -- CREACION DE STORE PROCEDURE
 
