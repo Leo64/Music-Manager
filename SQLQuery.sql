@@ -75,9 +75,10 @@ WHERE G.descripcion LIKE '%@nombre_grupo%'
 
 -- CREACION DE STORE PROCEDURE
 
-CREATE PROCEDURE sp_SeleccionNombreConjunto_Solista
-	@tipo bit
+CREATE 
+ALTER PROCEDURE sp_SeleccionNombreConjunto_Solista
 AS
-	SELECT G.descripcion
+	SELECT *
 	FROM grupo AS G
-	WHERE G.solista_conjunto = @tipo
+
+EXEC sp_SeleccionNombreConjunto_Solista

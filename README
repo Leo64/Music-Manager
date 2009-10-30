@@ -5,9 +5,9 @@ Practico Integrador Programacion II - Lab. de Computacion II
 Music-Manager
 
 - Autors:
-# Back, Leonardo
-# Fassi, Claudio
-# Mastroviti, Nicolas
+# Back, Leonardo ()
+# Fassi, Claudio ()
+# Mastroviti, Nicolas (104186)
 
 - Convenciones: despues del prefijo va _ (guion bajo) ej. frm_
 Form : frm
@@ -27,3 +27,4 @@ ToolStripDropDownBox : tsddb
 ToolStripMenuItem : tsmi
 TabControl : tc
 TreeView : tv
+RootNode : rn

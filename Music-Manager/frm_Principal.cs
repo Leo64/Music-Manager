@@ -37,33 +37,12 @@ namespace Music_Manager
         { 
             frm_ConsultasSQL frm_consultasSQL = new frm_ConsultasSQL();
             frm_consultasSQL.Show();
-        }   /* Aqui se Imprimiran las consultas que utilizemos */
+        }
 
         private void tsddbABD_Conectar_Click(object sender, EventArgs e)
         {
             frm_ConectarBaseDeDatos ofrm_ConectarBaseDeDatos = new frm_ConectarBaseDeDatos();
             ofrm_ConectarBaseDeDatos.Show();
-        }
-
-        private void lblComentario_Click(object sender, EventArgs e)
-        {
-
-        }   /* Muestra un resultado en la busqueda */
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }    /* Este label  muestra informacion extra */
-
-        private void lstTemas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }   /* Aqui se encontraran todos los temas del lo seleccionado en la lista anterior */
-
-        // Arbol
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-            /* http://msdn.microsoft.com/es-es/library/t5yh0hs4.aspx */
         }
 
         private void cerrarToolStripMenuItem_Click (object sender, EventArgs e)

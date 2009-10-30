@@ -89,17 +89,17 @@ namespace Music_Manager
 
         /* NAME: sp_SeleccionNombreConjunto_Solista
          * DESCRIPTION: llama a un procedimiento almacenado
-         * PARAMETERS: int 1:solista 0:conjunto
+         * PARAMETERS: none
          * RETURNS: true:consulta exitosa false:consulta fallida
          */
-        public bool sp_SeleccionNombreConjunto_Solista(int tipo)
+        public bool sp_SeleccionNombreConjunto_Solista ()
         {
-            SqlParameter parametro = new SqlParameter("@tipo", SqlDbType.Bit);
-            parametro.Value = tipo;
+            //SqlParameter parametro = new SqlParameter("@tipo", SqlDbType.Bit);
+            //parametro.Value = tipo;
 
             Command.CommandText = "sp_SeleccionNombreConjunto_Solista";
             Command.CommandType = CommandType.StoredProcedure;
-            Command.Parameters.Add(parametro);
+            //Command.Parameters.Add(parametro);
 
             try 
             {

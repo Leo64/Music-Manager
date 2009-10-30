@@ -20,7 +20,7 @@ namespace Music_Manager
 
         Sql oSql;
 
-        public frm_ConectarBaseDeDatos()
+        public frm_ConectarBaseDeDatos ()
         {
             InitializeComponent();
 
@@ -39,7 +39,7 @@ namespace Music_Manager
             cbx_Servidor.SelectedIndex = 0;
         }
 
-        private void btn_Cancelar_Click(object sender, EventArgs e)
+        private void btn_Cancelar_Click (object sender, EventArgs e)
         {
             this.Close();
         }
@@ -70,15 +70,21 @@ namespace Music_Manager
                     frm_Principal.tsslConexion.Image = global::Music_Manager.Properties.Resources.WebDatabase;
                     frm_Principal.tsslConexion.Text = "Conectado";
 
-                    if (!oSql.sp_SeleccionNombreConjunto_Solista(1)) 
+                    if (!oSql.sp_SeleccionNombreConjunto_Solista()) 
                     {
                         MessageBox.Show("Error en la consulta", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     } 
                     else 
                     {
+                        TreeNode rn_Conjuntos = frm_Principal.tv_Grupo.Nodes.Add("Conjuntos");
+                        TreeNode rn_Solistas = frm_Principal.tv_Grupo.Nodes.Add("Solistas");
+
                         while (oSql.DataReader.Read()) 
                         {
-                            frm_Principal.tv_Grupo.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(0)));
+                            if (Convert.ToString(oSql.DataReader["solista_conjunto"]) == "0")
+                                rn_Conjuntos.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
+                            else
+                                rn_Solistas.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
                         }
                     }
 

@@ -55,3 +55,4 @@ M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manage
 M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music-Manager.csproj.GenerateResource.Cache
 M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\bin\Debug\Music-Manager.exe
 M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\bin\Debug\Music-Manager.pdb
+M:\UTN\Primer Año\Segundo Cuatrimestre\Programacion II\Laboratorio\Music-Manager\Music-Manager\obj\Debug\Music_Manager.frm_Splash.resources

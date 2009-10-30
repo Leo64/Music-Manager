@@ -43,6 +43,12 @@
     <Compile Include="frm_About.Designer.cs">
       <DependentUpon>frm_About.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Splash.Designer.cs">
+      <DependentUpon>frm_Splash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sql.cs" />
     <Compile Include="frm_ConectarBD.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,10 @@
     <EmbeddedResource Include="frm_Principal.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_Splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,6 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

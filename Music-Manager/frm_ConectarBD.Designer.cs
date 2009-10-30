@@ -90,7 +90,7 @@
             // 
             this.tbx_Contrasenia.Location = new System.Drawing.Point(94, 45);
             this.tbx_Contrasenia.Name = "tbx_Contrasenia";
-            this.tbx_Contrasenia.PasswordChar = '*';
+            this.tbx_Contrasenia.PasswordChar = '•';
             this.tbx_Contrasenia.Size = new System.Drawing.Size(164, 20);
             this.tbx_Contrasenia.TabIndex = 1;
             // 
