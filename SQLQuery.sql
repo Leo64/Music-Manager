@@ -61,7 +61,7 @@ WHERE A.id_album IN (
 ORDER BY 1, 4
 	
 -- Calcula la antiguedad de los discos de un grupo
--- El nombre del grupo es ingresado por programa
+-- El nombre del grupo, fechas y duracion son ingresado por programa
 
 SELECT G.descripcion[Grupo], 
 	A.titulo[Album],
@@ -82,22 +82,5 @@ FROM album AS A
 		ON A.id_disqueria = D.id_disqueria
 WHERE G.descripcion LIKE '%' + @nombre_grupo + '%'
 	OR (A.fecha_lanzamiento BETWEEN @fecha_inicial AND @fecha_final)
+	AND A.duracion_album > @duracion_album
 ORDER BY 1, 2, 6, 7
-
-
-
-
-
-
-
-
-
--- CREACION DE STORE PROCEDURE
-
-CREATE 
-ALTER PROCEDURE sp_SeleccionNombreConjunto_Solista
-AS
-	SELECT *
-	FROM grupo AS G
-
-EXEC sp_SeleccionNombreConjunto_Solista
