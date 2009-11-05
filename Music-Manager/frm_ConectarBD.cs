@@ -18,7 +18,41 @@ namespace Music_Manager
         [DllImport("User32")]
         private static extern int GetMenuItemCount(IntPtr hWnd);
 
-        Sql oSql;
+        private int tipoAutenticacion;
+        private string bd;
+        private string servidor;
+        private string usuario;
+        private string contrasenia;
+
+        public int TipoAutenticacion
+        {
+            set { tipoAutenticacion = value; }
+            get { return tipoAutenticacion; }
+        }
+
+        public string Bd
+        {
+            set { bd = value; }
+            get { return bd; }
+        }
+
+        public string Servidor
+        {
+            set { servidor = value; }
+            get { return servidor; }
+        }
+
+        public string Usuario
+        {
+            set { usuario = value; }
+            get { return usuario; }
+        }
+
+        public string Contrasenia
+        {
+            set { contrasenia = value; }
+            get { return contrasenia; }
+        }
 
         public frm_ConectarBaseDeDatos ()
         {
@@ -27,8 +61,6 @@ namespace Music_Manager
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int menuItemCount = GetMenuItemCount(hMenu);
             RemoveMenu(hMenu, menuItemCount - 1, MF_BYPOSITION);
-
-            oSql = new Sql();
         }
 
         private void frm_ConectarBaseDeDatos_Load (object sender, EventArgs e)
@@ -59,38 +91,11 @@ namespace Music_Manager
 
         private void btn_Conectar_Click (object sender, EventArgs e)
         {
-            if (!oSql.Conectar(cbx_Autenticacion.SelectedIndex, cbx_BaseDeDatos.SelectedItem.ToString().ToLower(), cbx_Servidor.SelectedItem.ToString(), tbx_Usuario.Text, tbx_Contrasenia.Text)) 
-            {
-                MessageBox.Show("Error en la conexión", "Conectar", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } 
-            else 
-            {
-                if (MessageBox.Show("Exito en la conexión", "Conectar", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK) 
-                {
-                    frm_Principal.tsslConexion.Image = global::Music_Manager.Properties.Resources.WebDatabase;
-                    frm_Principal.tsslConexion.Text = "Conectado";
-
-                    if (!oSql.sp_SeleccionNombreConjunto_Solista()) 
-                    {
-                        MessageBox.Show("Error en la consulta", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    } 
-                    else 
-                    {
-                        TreeNode rn_Conjuntos = frm_Principal.tv_Grupo.Nodes.Add("Conjuntos");
-                        TreeNode rn_Solistas = frm_Principal.tv_Grupo.Nodes.Add("Solistas");
-
-                        while (oSql.DataReader.Read()) 
-                        {
-                            if (Convert.ToString(oSql.DataReader["solista_conjunto"]) == "0")
-                                rn_Conjuntos.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
-                            else
-                                rn_Solistas.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
-                        }
-                    }
-
-                    this.Close();
-                }
-            }
+            TipoAutenticacion = cbx_Autenticacion.SelectedIndex;
+            Bd = cbx_BaseDeDatos.SelectedItem.ToString();
+            Servidor = cbx_Servidor.SelectedItem.ToString().ToLower();
+            Usuario = tbx_Usuario.Text;
+            Contrasenia = tbx_Contrasenia.Text;
         }
 
         /* NAME: EnableBoxes 

@@ -56,9 +56,9 @@ namespace Music_Manager
          * PARAMETERS: int, string, servidor, usuario, contrasenia
          * RETURNS: true:conexion exitosa false:conexion fallida
          */
-        public bool Conectar(int tipo, string db, string servidor, string usuario, string contrasenia)
+        public bool Conectar(int tipoAutenticacion, string db, string servidor, string usuario, string contrasenia)
         {
-            switch (tipo)
+            switch (tipoAutenticacion)
             {
                 case 0:
                     StringConexion = @"Data Source=.\" + servidor + ";"
@@ -92,14 +92,10 @@ namespace Music_Manager
          * PARAMETERS: none
          * RETURNS: true:consulta exitosa false:consulta fallida
          */
-        public bool sp_SeleccionNombreConjunto_Solista ()
+        public bool sp_SeleccionNombreGrupo ()
         {
-            //SqlParameter parametro = new SqlParameter("@tipo", SqlDbType.Bit);
-            //parametro.Value = tipo;
-
-            Command.CommandText = "sp_SeleccionNombreConjunto_Solista";
+            Command.CommandText = "sp_SeleccionNombreGrupo";
             Command.CommandType = CommandType.StoredProcedure;
-            //Command.Parameters.Add(parametro);
 
             try 
             {
@@ -107,6 +103,33 @@ namespace Music_Manager
                 DataReader = Command.ExecuteReader();
             } 
             catch (SqlException) 
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        /* NAME: sp_SeleccionAlbumPorGrupo
+         * DESCRIPTION: llama a un procedimiento almacenado
+         * PARAMETERS: int
+         * RETURNS: true:consulta exitosa false:consulta fallida
+         */
+        public bool sp_SeleccionAlbumPorGrupo (string nombreGrupo)
+        {
+            SqlParameter parametro = new SqlParameter("@nombreGrupo", SqlDbType.NVarChar);
+            parametro.Value = nombreGrupo;
+
+            Command.CommandText = "sp_SeleccionAlbumPorGrupo";
+            Command.CommandType = CommandType.StoredProcedure;
+            Command.Parameters.Add(parametro);
+
+            try
+            {
+                Command.Connection = Conexion;
+                DataReader = Command.ExecuteReader();
+            }
+            catch (SqlException)
             {
                 return false;
             }

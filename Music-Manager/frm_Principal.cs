@@ -18,6 +18,8 @@ namespace Music_Manager
         [DllImport("User32")]
         private static extern int GetMenuItemCount(IntPtr hWnd);
 
+        Sql oSql;
+
         public frm_Principal ()
         {
             InitializeComponent();
@@ -25,6 +27,8 @@ namespace Music_Manager
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int menuItemCount = GetMenuItemCount(hMenu);
             RemoveMenu(hMenu, menuItemCount - 1, MF_BYPOSITION);
+
+            oSql = new Sql();
         }
 
         private void tsbAcercaDe_Click(object sender, EventArgs e)
@@ -39,15 +43,69 @@ namespace Music_Manager
             frm_consultasSQL.Show();
         }
 
-        private void tsddbABD_Conectar_Click(object sender, EventArgs e)
+        private void tsddbABD_Conectar_Click (object sender, EventArgs e)
         {
             frm_ConectarBaseDeDatos ofrm_ConectarBaseDeDatos = new frm_ConectarBaseDeDatos();
-            ofrm_ConectarBaseDeDatos.Show();
+            ofrm_ConectarBaseDeDatos.ShowDialog();
+
+            DialogResult respuesta = ofrm_ConectarBaseDeDatos.DialogResult;
+            
+            if (respuesta == DialogResult.OK)
+            {
+                if (!oSql.Conectar(ofrm_ConectarBaseDeDatos.TipoAutenticacion, ofrm_ConectarBaseDeDatos.Bd,
+                ofrm_ConectarBaseDeDatos.Servidor, ofrm_ConectarBaseDeDatos.Usuario, ofrm_ConectarBaseDeDatos.Contrasenia))
+                {
+                    MessageBox.Show("Error en la conexión", "Conectar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    if (MessageBox.Show("Exito en la conexión", "Conectar", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                    {
+                        tsslConexion.Image = global::Music_Manager.Properties.Resources.WebDatabase;
+                        tsslConexion.Text = "Conectado";
+
+                        if (!oSql.sp_SeleccionNombreGrupo())
+                        {
+                            MessageBox.Show("Error en la consulta", "Consulta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            TreeNode rn_Conjuntos = tv_Grupo.Nodes.Add("Conjuntos");
+                            TreeNode rn_Solistas = tv_Grupo.Nodes.Add("Solistas");
+
+                            while (oSql.DataReader.Read())
+                            {
+                                if (Convert.ToString(oSql.DataReader["solista_conjunto"]) == "0")
+                                {
+                                    rn_Conjuntos.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
+                                }
+                                else
+                                {
+                                    rn_Solistas.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
+                                }
+                            }
+                            oSql.DataReader.Close();
+                        }
+                    }
+                }
+            }
         }
 
         private void cerrarToolStripMenuItem_Click (object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tv_Grupo_AfterSelect (object sender, TreeViewEventArgs e)
+        {
+            tv_Grupo.SelectedNode = e.Node;
+
+            oSql.sp_SeleccionAlbumPorGrupo(tv_Grupo.SelectedNode.Text);
+
+            while (oSql.DataReader.Read())
+                cbx_Titulo.Items.Add(Convert.ToString(oSql.DataReader.GetValue(0)));
+
+            oSql.DataReader.Close();
         }
     }
 }

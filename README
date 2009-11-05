@@ -28,3 +28,5 @@ ToolStripMenuItem : tsmi
 TabControl : tc
 TreeView : tv
 RootNode : rn
+RichTextBox : rtbx
+DateTimePicker : dtp
