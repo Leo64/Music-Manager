@@ -84,7 +84,6 @@ namespace Music_Manager
                                     rn_Solistas.Nodes.Add(Convert.ToString(oSql.DataReader.GetValue(1)));
                                 }
                             }
-                            oSql.DataReader.Close();
                         }
                     }
                 }
@@ -104,8 +103,6 @@ namespace Music_Manager
 
             while (oSql.DataReader.Read())
                 cbx_Titulo.Items.Add(Convert.ToString(oSql.DataReader.GetValue(0)));
-
-            oSql.DataReader.Close();
         }
     }
 }
