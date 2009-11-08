@@ -9,6 +9,7 @@ namespace Music_Manager
         int idAlbum;
         int idGenero;
         int idDisqueria;
-        int
+        int idCompania;
+        int idGrupo;
     }
 }

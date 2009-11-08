@@ -97,8 +97,6 @@ namespace Music_Manager
 
         private void tv_Grupo_AfterSelect (object sender, TreeViewEventArgs e)
         {
-            tv_Grupo.SelectedNode = e.Node;
-
             oSql.sp_SeleccionAlbumPorGrupo(tv_Grupo.SelectedNode.Text);
 
             while (oSql.DataReader.Read())
