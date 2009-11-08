@@ -36,7 +36,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album.cs" />
     <Compile Include="Autor.cs" />
+    <Compile Include="Disqueria.cs" />
     <Compile Include="frm_About.cs">
       <SubType>Form</SubType>
     </Compile>

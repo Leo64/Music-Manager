@@ -64,7 +64,7 @@ namespace Music_Manager
                     StringConexion = @"Data Source=.\" + servidor + ";"
                         + @"AttachDbFilename=C:\Archivos de programa\Microsoft SQL Server\MSSQL.1\MSSQL\Data\" + db + "_data" + ".mdf;"
                         + "Database=" + db + ";"
-                        + "Trusted_Connection=Yes;";
+                        + "Trusted_Connection=Yes;MultipleActiveResultSets=True";
                     break;
                 case 1:
                     StringConexion = @"Data Source=" + servidor + ";"
