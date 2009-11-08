@@ -34,7 +34,8 @@ EXEC sp_SeleccionNombreGrupo
 SELECT * FROM grupo
 SELECT * FROM album
 
-CREATE PROCEDURE sp_SeleccionAlbumPorGrupo
+CREATE 
+ALTER PROCEDURE sp_SeleccionAlbumPorGrupo
 	@nombreGrupo nvarchar(25)
 AS
 	SELECT A.titulo
@@ -46,3 +47,15 @@ AS
 		)
 
 EXEC sp_SeleccionAlbumPorGrupo 'adams'
+
+-- Seleccion de datos del album
+
+CREATE 
+ALTER PROCEDURE sp_SeleccionAlbum
+	@nombreAlbum nvarchar(25)
+AS
+	SELECT *
+	FROM album AS A
+	WHERE A.titulo LIKE '%' + @nombreAlbum + '%'
+
+EXEC sp_SeleccionAlbum 'verano'
