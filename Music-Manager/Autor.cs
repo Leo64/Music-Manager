@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Music_Manager
 {
-    class Autor : Persona//prueba
+    class Autor : Persona
     {
         private int idAutor;
 
